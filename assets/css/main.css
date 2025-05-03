@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Ruda:wght@400..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Roboto Slab", serif;
+  --font-sans: "Ruda", sans-serif;
+
+  --color-*: initial;
+  --color-white: #ffffff;
+  --color-black: #333333;
+  --color-primary: #007a88;
+}
+
+body {
+  @apply font-serif font-normal tracking-wide;
+  @apply bg-white text-black;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+h1, h2, h3 {
+  @apply font-sans font-bold leading-[1.1];
+}
+
+h1 {
+  @apply text-[clamp(16px,calc(53/375*100vw),122px)];
+}
+h2 {
+  @apply text-[clamp(16px,calc(32/375*100vw),80px)];
+}
+h3 {
+  @apply text-[clamp(24px,calc(24/375*100vw),40px)];
+}
+
+small {
+  @apply font-extralight opacity-75;
+}
+
+a {
+  @apply font-bold underline text-primary;
+}
