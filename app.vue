@@ -121,7 +121,7 @@
           My macOS dotfiles.
           Automate the setup by deploying configuration files with stow, installing packages with Brewfile, and configuring the OS with defaults command.
         </p>
-        <AppLink href="https://github.com/tsunematsu21/boop">
+        <AppLink href="https://github.com/tsunematsu21/dotfiles">
           Show GitHub repo
         </AppLink>
         <template #footer>
