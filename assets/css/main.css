@@ -33,7 +33,7 @@ h3 {
 }
 
 small {
-  @apply font-extralight opacity-75;
+  @apply font-sans font-extralight opacity-75;
 }
 
 a {
