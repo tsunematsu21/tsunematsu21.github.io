@@ -124,6 +124,9 @@
         <AppLink href="https://github.com/tsunematsu21/boop">
           Show GitHub repo
         </AppLink>
+        <template #footer>
+          <TagList :tags="['dotfiles', 'macos-setup']" />
+        </template>
       </AppSection>
       <AppSection>
         <template #header>
@@ -133,6 +136,9 @@
         <AppLink href="https://github.com/tsunematsu21/boop">
           Show GitHub repo
         </AppLink>
+        <template #footer>
+          <TagList :tags="['golang', 'cli']" />
+        </template>
       </AppSection>
     </AppSection>
 
