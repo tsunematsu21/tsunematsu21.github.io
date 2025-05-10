@@ -130,14 +130,20 @@
       </AppSection>
       <AppSection>
         <template #header>
-          <h3>boop</h3>
+          <h3>FizzBuzz Generic Library in Go</h3>
         </template>
-        <p>The connectivity test tool made with Golang.</p>
-        <AppLink href="https://github.com/tsunematsu21/boop">
-          Show GitHub repo
-        </AppLink>
+        <p>This is a flexible and reusable FizzBuzz library implemented in Go using generics.</p>
+        <p>It allows you to define custom rules and actions for any type, making it easy to extend the traditional FizzBuzz pattern beyond simple integers.</p>
+        <div class="flex flex-wrap gap-2">
+          <AppLink href="https://github.com/tsunematsu21/boop">
+            Show GitHub repo
+          </AppLink>
+          <AppLink href="https://pkg.go.dev/github.com/tsunematsu21/fb">
+            Show refs in pkg.go.dev
+          </AppLink>
+        </div>
         <template #footer>
-          <TagList :tags="['golang', 'cli']" />
+          <TagList :tags="['golang', 'fizzbuzz']" />
         </template>
       </AppSection>
     </AppSection>
