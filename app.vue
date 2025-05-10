@@ -160,6 +160,9 @@
     </AppSection>
 
     <template #footer>
+      <div class="flex items-center justify-center">
+        <img src="/icon.svg" class="w-32 opacity-60">
+      </div>
       <div class="flex items-center justify-between font-sans">
         <small>&copy; 2025 Masato Tsunematsu</small>
         <small>Made with love</small>
@@ -174,5 +177,12 @@ useSeoMeta({
   ogTitle: 'Masato Tsunematsu - The coke drinking infrustructure engineer based in Japan.',
   description: 'This is my amazing site, I will give you power of the gorilla.',
   ogDescription: 'This is my amazing site, I will give you power of the gorilla.',
+})
+useHead({
+  link: [
+    { rel: 'icon', href: '/favicon.ico', sizes: '32x32' },
+    { rel: 'icon', href: '/icon.svg', type: 'image/svg+xml' },
+    { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' },
+  ]
 })
 </script>
