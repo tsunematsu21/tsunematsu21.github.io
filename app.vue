@@ -187,12 +187,12 @@
     </AppSection>
 
     <template #footer>
-      <div class="flex items-center justify-center">
-        <img src="/icon.svg" class="w-32 opacity-60">
-      </div>
-      <div class="flex items-center justify-between font-sans">
-        <small>&copy; 2025 Masato Tsunematsu</small>
-        <small>Made with love</small>
+      <div class="flex flex-row items-center justify-center gap-2 py-16">
+        <img src="/icon.svg" class="w-14">
+        <div class="flex flex-col items-start font-sans pt-3">
+          <span class="text-xs">Made with love by</span>
+          <span class="text-sm">Masato Tsunematsu</span>
+        </div>
       </div>
     </template>
   </NuxtLayout>
