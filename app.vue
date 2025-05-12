@@ -105,7 +105,7 @@
         and organizations who create monsters to bring misery to the Earth and further their plans.
       </p>
       <p>In addition, I have the following skills:</p>
-      <ul class="list-disc pl-[1em]">
+      <ul class="list-disc pl-[2em]">
         <li>
           <b>Programming:</b>
           TypeScript, Python, Go, Ruby, Java
