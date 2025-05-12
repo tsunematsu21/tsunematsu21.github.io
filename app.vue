@@ -104,6 +104,33 @@
         use their physical powers and enhanced Banana to fight against evil forces
         and organizations who create monsters to bring misery to the Earth and further their plans.
       </p>
+      <p>In addition, I have the following skills:</p>
+      <ul class="list-disc pl-[1em]">
+        <li>
+          <b>Programming:</b>
+          TypeScript, Python, Go, Ruby, Java
+        </li>
+        <li>
+          <b>Database:</b>
+          Oracle, MySQL, PostgreSQL, Db2, Amazon RDS / Aurora / DynamoDB / DocumentDB, Elasticache
+        </li>
+        <li>
+          <b>Cloud:</b>
+          Amazon Web Service, Microsoft Azure
+        </li>
+        <li>
+          <b>IaC:</b>
+          AWS CDK, CloudFormation, Ansible, Terraform
+        </li>
+        <li>
+          <b>Monitoring:</b>
+          CloudWatch, Zabbix, Mackerel
+        </li>
+        <li>
+          <b>Other:</b>
+          Git, Docker
+        </li>
+      </ul>
     </AppSection>
 
     <AppSection id="showcase">
@@ -122,7 +149,7 @@
           Automate the setup by deploying configuration files with stow, installing packages with Brewfile, and configuring the OS with defaults command.
         </p>
         <AppLink href="https://github.com/tsunematsu21/dotfiles">
-          Show GitHub repo
+          View on GitHub
         </AppLink>
         <template #footer>
           <TagList :tags="['dotfiles', 'macos-setup']" />
@@ -136,10 +163,10 @@
         <p>It allows you to define custom rules and actions for any type, making it easy to extend the traditional FizzBuzz pattern beyond simple integers.</p>
         <div class="flex flex-wrap gap-2">
           <AppLink href="https://github.com/tsunematsu21/boop">
-            Show GitHub repo
+            View on GitHub
           </AppLink>
           <AppLink href="https://pkg.go.dev/github.com/tsunematsu21/fb">
-            Show refs in pkg.go.dev
+            View on Go Packages
           </AppLink>
         </div>
         <template #footer>
