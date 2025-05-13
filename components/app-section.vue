@@ -1,9 +1,9 @@
 <template>
-  <section class="space-y-[1rem] relative pb-4">
+  <section class="space-y-[2rem] relative pb-4">
     <header>
       <slot name="header" />
     </header>
-    <div class="space-y-[1rem] [&_section]:pb-[2rem] [&_section:last-child]:pb-0">
+    <div class="space-y-[1rem] [&_section]:pt-[3rem]">
       <slot />
     </div>
     <footer v-if="$slots.footer">

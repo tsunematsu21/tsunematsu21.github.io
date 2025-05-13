@@ -9,7 +9,7 @@
             <span>Tsunematsu</span>
           </h1>
         </template>
-        <p class="absolute top-0 right-0 flex flex-wrap items-end flex-col text-[clamp(10px,calc(10/375*100vw),18px)] text-black/70 italic tracking-widest">
+        <p class="absolute top-0 right-0 flex flex-wrap items-end flex-col text-[clamp(10px,calc(10/375*100vw),18px)] italic tracking-widest">
           <span>The coke drinking</span>
           <span>infrustructure engineer</span>
           <span>based in Japan</span>

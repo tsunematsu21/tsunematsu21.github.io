@@ -27,7 +27,7 @@ h1 {
   @apply text-[clamp(48px,calc(51/375*100vw),100px)];
 }
 h2 {
-  @apply text-[clamp(40px,calc(32/375*100vw),64px)];
+  @apply text-[clamp(40px,calc(40/375*100vw),72px)];
 }
 h3 {
   @apply text-[clamp(24px,calc(24/375*100vw),48px)];

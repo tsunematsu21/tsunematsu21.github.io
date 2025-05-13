@@ -1,5 +1,5 @@
 <template>
-   <ul class="flex flex-wrap items-start justify-start gap-4 [&_li]:flex-1 [&_li>a]:flex! [&_li>a]:justify-between! [&_li>a]:flex-row-reverse">
+   <ul class="flex flex-wrap items-start justify-start gap-2 [&_li]:flex-1 [&_li>a]:flex!">
     <li>
       <AppButton href="https://github.com/tsunematsu21">Github</AppButton>
     </li>
@@ -7,7 +7,7 @@
       <AppButton href="https://instagram.com/tsunematsu21">Instagram</AppButton>
     </li>
     <li>
-      <AppButton href="https://x.com/tsunematsu21">X</AppButton>
+      <AppButton href="https://x.com/tsunematsu21">X (Twitter)</AppButton>
     </li>
     <li>
       <AppButton href="https://note.com/tsunematsu21">Note</AppButton>
