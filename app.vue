@@ -9,11 +9,14 @@
             <span>Tsunematsu</span>
           </h1>
         </template>
-        <p class="absolute top-0 right-0 flex flex-wrap items-end flex-col text-[clamp(10px,calc(10/375*100vw),18px)] text-primary">
+        <p class="absolute top-0 right-0 flex flex-wrap items-end flex-col text-[clamp(10px,calc(10/375*100vw),18px)] text-primary font-bold tracking-wider">
           <span>The coke drinking</span>
           <span>infrustructure engineer</span>
           <span>based in Japan</span>
         </p>
+        <div>
+          <AppAvatar />
+        </div>
       </AppSection>
     </template>
 
