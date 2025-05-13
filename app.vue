@@ -9,7 +9,7 @@
             <span>Tsunematsu</span>
           </h1>
         </template>
-        <p class="absolute top-0 right-0 flex flex-wrap items-end flex-col leading-wide text-[clamp(10px,3vw,24px)] text-primary">
+        <p class="absolute top-0 right-0 flex flex-wrap items-end flex-col text-[clamp(10px,calc(10/375*100vw),18px)] text-primary">
           <span>The coke drinking</span>
           <span>infrustructure engineer</span>
           <span>based in Japan</span>
@@ -136,41 +136,49 @@
     <AppSection id="showcase">
       <template #header>
         <h2>Showcase</h2>
-        <p>
-          Showcase some products.
-        </p>
       </template>
+      <p>
+        Showcase some products.
+      </p>
       <AppSection>
         <template #header>
           <h3>dotfiles</h3>
+          <TagList :tags="['dotfiles', 'macos-setup']" />
         </template>
         <p>
           My macOS dotfiles.
           Automate the setup by deploying configuration files with stow, installing packages with Brewfile, and configuring the OS with defaults command.
         </p>
-        <AppLink href="https://github.com/tsunematsu21/dotfiles">
-          View on GitHub
-        </AppLink>
         <template #footer>
-          <TagList :tags="['dotfiles', 'macos-setup']" />
+          <ul>
+            <li>
+              <AppLink href="https://github.com/tsunematsu21/dotfiles">
+                View on GitHub
+              </AppLink>
+            </li>
+          </ul>
         </template>
       </AppSection>
       <AppSection>
         <template #header>
           <h3>FizzBuzz Generic Library in Go</h3>
+          <TagList :tags="['golang', 'fizzbuzz']" />
         </template>
         <p>This is a flexible and reusable FizzBuzz library implemented in Go using generics.</p>
         <p>It allows you to define custom rules and actions for any type, making it easy to extend the traditional FizzBuzz pattern beyond simple integers.</p>
-        <div class="flex flex-wrap gap-2">
-          <AppLink href="https://github.com/tsunematsu21/boop">
-            View on GitHub
-          </AppLink>
-          <AppLink href="https://pkg.go.dev/github.com/tsunematsu21/fb">
-            View on Go Packages
-          </AppLink>
-        </div>
         <template #footer>
-          <TagList :tags="['golang', 'fizzbuzz']" />
+          <ul>
+            <li>
+              <AppLink href="https://github.com/tsunematsu21/boop">
+                View on GitHub
+              </AppLink>
+            </li>
+            <li>
+              <AppLink href="https://pkg.go.dev/github.com/tsunematsu21/fb">
+                View on Go Packages
+              </AppLink>
+            </li>
+          </ul>
         </template>
       </AppSection>
     </AppSection>

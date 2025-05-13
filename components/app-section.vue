@@ -1,12 +1,12 @@
 <template>
-  <section class="space-y-[2rem] relative pb-4">
+  <section class="space-y-[1rem] relative pb-4">
     <header>
       <slot name="header" />
     </header>
-    <div class="space-y-[1rem] [&_section:last-child]:pb-0">
+    <div class="space-y-[1rem] [&_section]:py-[1rem] [&_section:last-child]:pb-0">
       <slot />
     </div>
-    <footer>
+    <footer v-if="$slots.footer">
       <slot name="footer" />
     </footer>
   </section>

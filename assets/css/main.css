@@ -12,7 +12,7 @@
 }
 
 body {
-  @apply font-serif font-normal tracking-wide;
+  @apply font-serif font-normal leading-relaxed;
   @apply bg-white text-black;
   @apply text-[clamp(16px,calc(16/375*100vw),18px)];
   font-optical-sizing: auto;
@@ -20,14 +20,14 @@ body {
 }
 
 h1, h2, h3 {
-  @apply font-sans font-bold leading-[1.1];
+  @apply font-sans font-bold leading-[1.1] tracking-wide;
 }
 
 h1 {
-  @apply text-[clamp(53px,calc(53/375*100vw),122px)];
+  @apply text-[clamp(48px,calc(51/375*100vw),100px)];
 }
 h2 {
-  @apply text-[clamp(48px,calc(32/375*100vw),64px)];
+  @apply text-[clamp(40px,calc(32/375*100vw),64px)];
 }
 h3 {
   @apply text-[clamp(24px,calc(24/375*100vw),48px)];

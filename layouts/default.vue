@@ -1,9 +1,9 @@
 <template>
-  <div class="max-w-3xl mx-auto space-y-[4rem] p-8">
+  <div class="max-w-2xl mx-auto space-y-[4rem] p-8">
     <header>
       <slot name="header" />
     </header>
-    <main class="space-y-[3rem]">
+    <main class="space-y-[8rem]">
       <slot />
     </main>
     <footer class="space-y-[2rem]">
