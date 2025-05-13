@@ -217,6 +217,9 @@ useSeoMeta({
   ogDescription: 'This is my amazing site, I will give you power of the gorilla.',
 })
 useHead({
+  htmlAttrs: {
+    lang: 'en'
+  },
   link: [
     { rel: 'icon', href: '/favicon.ico', sizes: '32x32' },
     { rel: 'icon', href: '/icon.svg', type: 'image/svg+xml' },
