@@ -3,7 +3,7 @@
     <header>
       <slot name="header" />
     </header>
-    <main class="space-y-[6rem]">
+    <main class="space-y-[8rem]">
       <slot />
     </main>
     <footer class="space-y-[2rem]">

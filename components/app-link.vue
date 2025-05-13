@@ -1,5 +1,5 @@
 <template>
-  <a :href="href" target="_blank" class="inline-flex items-center underline text-primary hover:opacity-75 transition-all">
+  <a :href="href" target="_blank" class="inline-flex items-center underline text-primary hover:opacity-75 transition-all font-bold">
     <span>
       <slot />
     </span>

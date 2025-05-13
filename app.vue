@@ -9,7 +9,7 @@
             <span>Tsunematsu</span>
           </h1>
         </template>
-        <p class="absolute top-0 right-0 flex flex-wrap items-end flex-col text-[clamp(10px,calc(10/375*100vw),18px)] text-primary font-bold tracking-wider">
+        <p class="absolute top-0 right-0 flex flex-wrap items-end flex-col text-[clamp(10px,calc(10/375*100vw),18px)] text-black/70 italic tracking-widest">
           <span>The coke drinking</span>
           <span>infrustructure engineer</span>
           <span>based in Japan</span>
@@ -153,13 +153,9 @@
           Automate the setup by deploying configuration files with stow, installing packages with Brewfile, and configuring the OS with defaults command.
         </p>
         <template #footer>
-          <ul>
-            <li>
-              <AppLink href="https://github.com/tsunematsu21/dotfiles">
-                View on GitHub
-              </AppLink>
-            </li>
-          </ul>
+          <AppButton href="https://github.com/tsunematsu21/dotfiles">
+            View on GitHub
+          </AppButton>
         </template>
       </AppSection>
       <AppSection>
@@ -170,16 +166,16 @@
         <p>This is a flexible and reusable FizzBuzz library implemented in Go using generics.</p>
         <p>It allows you to define custom rules and actions for any type, making it easy to extend the traditional FizzBuzz pattern beyond simple integers.</p>
         <template #footer>
-          <ul>
+          <ul class="flex flex-wrap gap-4">
             <li>
-              <AppLink href="https://github.com/tsunematsu21/boop">
+              <AppButton href="https://github.com/tsunematsu21/boop">
                 View on GitHub
-              </AppLink>
+              </AppButton>
             </li>
             <li>
-              <AppLink href="https://pkg.go.dev/github.com/tsunematsu21/fb">
+              <AppButton href="https://pkg.go.dev/github.com/tsunematsu21/fb">
                 View on Go Packages
-              </AppLink>
+              </AppButton>
             </li>
           </ul>
         </template>
