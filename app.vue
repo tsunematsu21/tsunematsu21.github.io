@@ -17,6 +17,9 @@
         <div>
           <AppAvatar />
         </div>
+        <template #footer>
+          <SocialLink />
+        </template>
       </AppSection>
     </template>
 
@@ -108,7 +111,7 @@
         and organizations who create monsters to bring misery to the Earth and further their plans.
       </p>
       <p>In addition, I have the following skills:</p>
-      <ul class="list-disc pl-[2em]">
+      <ul class="list-disc pl-[1em]">
         <li>
           <b>Programming:</b>
           TypeScript, Python, Go, Ruby, Java
@@ -177,6 +180,11 @@
                 View on Go Packages
               </AppButton>
             </li>
+            <li>
+              <AppButton href="https://note.com/tsunematsu21/n/n3059c20363ec">
+                View on note (Japanese)
+              </AppButton>
+            </li>
           </ul>
         </template>
       </AppSection>
@@ -194,7 +202,7 @@
     </AppSection>
 
     <template #footer>
-      <div class="flex flex-row items-center justify-center gap-2 py-16">
+      <div class="flex flex-row items-center justify-center gap-2 pt-24 pb-8">
         <img src="/icon.svg" alt="Logo" class="w-14">
         <div class="flex flex-col items-start font-sans pt-3">
           <span class="text-xs">Made with love by</span>
@@ -220,6 +228,8 @@ useHead({
     { rel: 'icon', href: '/favicon.ico', sizes: '32x32' },
     { rel: 'icon', href: '/icon.svg', type: 'image/svg+xml' },
     { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' },
+    { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+    { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
   ]
 })
 </script>

@@ -1,16 +1,16 @@
 <template>
-   <ul class="flex flex-wrap items-start justify-start gap-2 [&_li]:flex-1 [&_li>a]:flex!">
+   <ul class="flex flex-wrap items-start justify-center gap-8">
     <li>
-      <AppButton href="https://github.com/tsunematsu21">Github</AppButton>
+      <AppButton href="https://github.com/tsunematsu21"></AppButton>
     </li>
     <li>
-      <AppButton href="https://instagram.com/tsunematsu21">Instagram</AppButton>
+      <AppButton href="https://instagram.com/tsunematsu21"></AppButton>
     </li>
     <li>
-      <AppButton href="https://x.com/tsunematsu21">X (Twitter)</AppButton>
+      <AppButton href="https://x.com/tsunematsu21"></AppButton>
     </li>
     <li>
-      <AppButton href="https://note.com/tsunematsu21">Note</AppButton>
+      <AppButton href="https://note.com/tsunematsu21"></AppButton>
     </li>
   </ul>
 </template>
