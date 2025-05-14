@@ -8,12 +8,15 @@
   --color-*: initial;
   --color-white: #ffffff;
   --color-black: #333333;
-  --color-primary: #007a88;
+  --color-primary: #00a8a6;
+}
+
+html {
+  @apply bg-white dark:bg-black text-black dark:text-white;
 }
 
 body {
   @apply font-serif font-normal leading-loose;
-  @apply bg-white text-black;
   @apply text-[clamp(16px,calc(16/375*100vw),18px)];
   font-optical-sizing: auto;
   font-style: normal;

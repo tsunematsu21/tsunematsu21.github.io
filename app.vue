@@ -15,7 +15,7 @@
           <span>based in Japan</span>
         </p>
         <div>
-          <AppAvatar />
+          <Avatar />
         </div>
         <template #footer>
           <Socials />
@@ -196,8 +196,8 @@
     </AppSection>
 
     <template #footer>
-      <div class="flex flex-row items-center justify-center gap-2 pt-24 pb-8">
-        <img src="/icon.svg" alt="Logo" class="w-14">
+      <div class="flex flex-row items-center justify-center gap-2 pt-24 pb-8 dark:bg-black">
+        <Logo class="w-14" />
         <div class="flex flex-col items-start font-sans pt-3">
           <span class="text-xs">Made with love by</span>
           <span class="text-sm">Masato Tsunematsu</span>
