@@ -1,8 +1,8 @@
 <template>
   <div class="flex flex-wrap items-start justify-start gap-2">
-    <small v-for="tag of tags">
+    <span v-for="tag of tags" class="text-sm opacity-70 font-sans">
       #{{ tag }}
-    </small>
+    </span>
   </div>
 </template>
 

@@ -9,7 +9,7 @@
             <span>Tsunematsu</span>
           </h1>
         </template>
-        <p class="absolute top-0 right-0 flex flex-wrap items-end flex-col text-[clamp(10px,calc(10/375*100vw),18px)] italic tracking-widest">
+        <p class="absolute top-0 right-0 flex flex-wrap items-end flex-col text-[clamp(10px,calc(10/375*100vw),18px)] italic tracking-widest leading-[1.6]">
           <span>The coke drinking</span>
           <span>infrustructure engineer</span>
           <span>based in Japan</span>
@@ -18,7 +18,7 @@
           <AppAvatar />
         </div>
         <template #footer>
-          <SocialLink />
+          <Socials />
         </template>
       </AppSection>
     </template>
@@ -149,43 +149,37 @@
       <AppSection>
         <template #header>
           <h3>dotfiles</h3>
-          <TagList :tags="['dotfiles', 'macos-setup']" />
+          <Tags :tags="['dotfiles', 'macos-setup']" />
         </template>
         <p>
           My macOS dotfiles.
           Automate the setup by deploying configuration files with stow, installing packages with Brewfile, and configuring the OS with defaults command.
         </p>
         <template #footer>
-          <AppButton href="https://github.com/tsunematsu21/dotfiles">
+          <Button href="https://github.com/tsunematsu21/dotfiles">
             View on GitHub
-          </AppButton>
+          </Button>
         </template>
       </AppSection>
       <AppSection>
         <template #header>
           <h3>FizzBuzz Generic Library in Go</h3>
-          <TagList :tags="['golang', 'fizzbuzz']" />
+          <Tags :tags="['golang', 'fizzbuzz']" />
         </template>
         <p>This is a flexible and reusable FizzBuzz library implemented in Go using generics.</p>
         <p>It allows you to define custom rules and actions for any type, making it easy to extend the traditional FizzBuzz pattern beyond simple integers.</p>
         <template #footer>
-          <ul class="flex flex-wrap gap-4">
-            <li>
-              <AppButton href="https://github.com/tsunematsu21/boop">
-                View on GitHub
-              </AppButton>
-            </li>
-            <li>
-              <AppButton href="https://pkg.go.dev/github.com/tsunematsu21/fb">
-                View on Go Packages
-              </AppButton>
-            </li>
-            <li>
-              <AppButton href="https://note.com/tsunematsu21/n/n3059c20363ec">
-                View on note (Japanese)
-              </AppButton>
-            </li>
-          </ul>
+          <Group>
+            <Button href="https://github.com/tsunematsu21/boop">
+              View on GitHub
+            </Button>
+            <Button href="https://pkg.go.dev/github.com/tsunematsu21/fb">
+              View on Go Packages
+            </Button>
+            <Button href="https://note.com/tsunematsu21/n/n3059c20363ec">
+              View on note (Japanese)
+            </Button>
+          </Group>
         </template>
       </AppSection>
     </AppSection>
@@ -198,7 +192,7 @@
         Want to get in touch? I'm not currently looking for a job, but welcome feedback and chat.
         Please ping me on socials. I will try my best to reply to you.
       </p>
-      <SocialLink />
+      <Socials />
     </AppSection>
 
     <template #footer>
