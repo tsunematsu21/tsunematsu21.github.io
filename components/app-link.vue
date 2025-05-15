@@ -1,6 +1,6 @@
 <template>
   <a :href="href" target="_blank" class="inline-flex items-center text-primary hover:opacity-75 transition-all">
-    <span class="font-bold underline">
+    <span class="underline">
       <slot />
     </span>
     <span class="[&>svg]:w-[1em]">

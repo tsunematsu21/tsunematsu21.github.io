@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  @apply font-serif font-normal leading-loose;
+  @apply font-serif font-normal leading-relaxed;
   @apply text-[clamp(16px,calc(16/375*100vw),18px)];
   font-optical-sizing: auto;
   font-style: normal;
