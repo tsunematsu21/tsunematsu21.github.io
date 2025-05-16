@@ -6,7 +6,7 @@
     <main class="space-y-[4rem]">
       <slot />
     </main>
-    <footer class="space-y-[2rem]">
+    <footer class="space-y-[2rem] mt-[12rem]">
       <slot name="footer" />
     </footer>
   </div>

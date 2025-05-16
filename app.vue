@@ -192,11 +192,12 @@
         Want to get in touch? I'm not currently looking for a job, but welcome feedback and chat.
         Please ping me on socials. I will try my best to reply to you.
       </p>
-      <Socials />
+
     </AppSection>
 
     <template #footer>
-      <div class="flex flex-row items-center justify-center gap-2 pt-24 pb-8 dark:bg-black">
+      <Socials />
+      <div class="flex flex-row items-center justify-center gap-2 dark:bg-black">
         <Logo class="w-14" />
         <div class="flex flex-col items-start font-sans pt-3">
           <span class="text-xs">Made with love by</span>

@@ -2,7 +2,7 @@
   <component :is="component.element" v-bind="{ ...component.props }" class="cursor-pointer">
     <span class="inline-flex items-center justify-center gap-2 h-10 min-w-10 rounded-md border-black dark:border-white border-2">
       <span class="inline-flex items-center justify-center gap-2" :class="$slots.default ? 'px-4' : 'px-0'">
-        <span v-if="$slots.default" class="text-xs font-sans font-black -mb-[2px]">
+        <span v-if="$slots.default" class="text-xs font-sans font-bold -mb-[2px]">
           <slot />
         </span>
         <span v-if="href" class="[&_svg]:h-6">
