@@ -170,7 +170,7 @@
         <p>It allows you to define custom rules and actions for any type, making it easy to extend the traditional FizzBuzz pattern beyond simple integers.</p>
         <template #footer>
           <Group>
-            <Button href="https://github.com/tsunematsu21/boop">
+            <Button href="https://github.com/tsunematsu21/fb">
               View on GitHub
             </Button>
             <Button href="https://pkg.go.dev/github.com/tsunematsu21/fb">
