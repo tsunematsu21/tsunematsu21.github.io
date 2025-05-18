@@ -1,5 +1,5 @@
 <template>
-  <section class="space-y-[1rem] relative pb-4">
+  <section class="space-y-[2rem] relative pb-4">
     <header>
       <slot name="header" />
     </header>
