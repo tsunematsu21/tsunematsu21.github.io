@@ -1,15 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Ruda:wght@400..900&display=swap');
-@import "tailwindcss";
 
-@theme {
-  --font-serif: "Roboto Slab", serif;
-  --font-sans: "Ruda", sans-serif;
-
-  --color-*: initial;
-  --color-white: #ffffff;
-  --color-black: #333333;
-  --color-primary: #00a8a6;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 html {
   @apply bg-white dark:bg-black text-black dark:text-white;

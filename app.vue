@@ -3,7 +3,7 @@
     <template #header>
       <AppSection>
         <template #header>
-          <h1 class="flex flex-col items-start leading-snug">
+          <h1 class="flex flex-col items-start">
             <span>Hi,</span>
             <span>I'm Masato</span>
             <span>Tsunematsu</span>
