@@ -221,24 +221,3 @@
     </template>
   </NuxtLayout>
 </template>
-
-<script setup lang="ts">
-useSeoMeta({
-  title: 'Masato Tsunematsu - The coke drinking infrustructure engineer based in Japan.',
-  ogTitle: 'Masato Tsunematsu - The coke drinking infrustructure engineer based in Japan.',
-  description: 'This is my amazing site, I will give you power of the gorilla.',
-  ogDescription: 'This is my amazing site, I will give you power of the gorilla.',
-})
-useHead({
-  htmlAttrs: {
-    lang: 'en'
-  },
-  link: [
-    { rel: 'icon', href: '/favicon.ico', sizes: '32x32' },
-    { rel: 'icon', href: '/icon.svg', type: 'image/svg+xml' },
-    { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' },
-    { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
-    { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
-  ]
-})
-</script>
