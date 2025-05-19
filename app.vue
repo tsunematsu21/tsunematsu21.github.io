@@ -197,6 +197,18 @@
       </template>
     </AppSection>
 
+    <AppSection id="colophon">
+      <template #header>
+        <h2>Colophon</h2>
+      </template>
+      <p>
+        Thank you for visiting my site. This site is built with Nuxt.js and Tailwind CSS and hosted on GitHub Pages. The code is available on <AppLink href="https://github.com/tsunematsu21/tsunematsu21.github.io">GitHub</AppLink>.
+      </p>
+      <p>
+        I am not a native English speaker, so I apologize if the English on the site content is incorrect. But I did my best to create this site to practice my English as well.
+      </p>
+    </AppSection>
+
     <template #footer>
       <Socials />
       <div class="flex flex-row items-center justify-center gap-2 dark:bg-black">
