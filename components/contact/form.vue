@@ -1,9 +1,9 @@
 <template>
-  <form target="_blank" method="POST" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfeCT7hSVsBzyFM7qp40F3MYrIvQ_4nAKfqMDPd_aRHCO52Lw/formResponse" class="block space-y-[1rem] font-sans">
-    <ContactInput type="text" label="Name" name="entry.383020617" />
-    <ContactInput type="email" label="Email" name="entry.1860689314" />
-    <ContactInput type="text" label="Subject" name="entry.2105845452" />
-    <ContactInput type="textarea" label="Message" name="entry.1814779587" />
+  <form @submit="onSubmit" target="_blank" method="POST" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfeCT7hSVsBzyFM7qp40F3MYrIvQ_4nAKfqMDPd_aRHCO52Lw/formResponse" class="block space-y-[1rem] font-sans">
+    <ContactInput type="text" label="Name" name="entry.383020617" v-model="name" />
+    <ContactInput type="email" label="Email" name="entry.1860689314" v-model="email" />
+    <ContactInput type="text" label="Subject" name="entry.2105845452" v-model="subject" />
+    <ContactInput type="textarea" label="Message" name="entry.1814779587" v-model="message" />
     <button class="bg-black text-white dark:bg-white dark:text-black rounded-md w-full h-8 cursor-pointer flex items-center justify-center gap-2">
       <span class="text-xs">
         Send Message
@@ -12,3 +12,19 @@
     </button>
   </form>
 </template>
+
+<script setup lang="ts">
+const name = ref<string>()
+const email = ref<string>()
+const subject = ref<string>()
+const message = ref<string>()
+
+function onSubmit() {
+  setTimeout(() => {
+    name.value = ""
+    email.value = ""
+    subject.value = ""
+    message.value = ""
+  }, 100)
+}
+</script>

@@ -3,7 +3,14 @@
     <div class="text-xs font-sans font-bold">
       {{ label }}:
     </div>
-    <component :is="component.element" v-bind="{ ...component.props }" required class="border border-black/50 dark:border-white/50 rounded-sm w-full px-2 py-1 text-sm" />
+    <component
+      :is="component.element"
+      v-bind="{ ...component.props }"
+      :value="model"
+      @input="handleInput"
+      required
+      class="border border-black/50 dark:border-white/50 rounded-sm w-full px-2 py-1 text-sm"
+    />
   </label>
 </template>
 
@@ -35,5 +42,12 @@ const component = computed(() => {
       }
     }
   }
-});
+})
+
+const model = defineModel<string>()
+
+function handleInput(e: Event) {
+  const target = e.target as HTMLInputElement | HTMLTextAreaElement
+  model.value = target.value
+}
 </script>
