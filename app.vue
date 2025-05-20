@@ -1,32 +1,6 @@
 <template>
   <NuxtLayout>
-    <template #header>
-      <AppSection>
-        <template #header>
-          <h1 class="flex flex-col items-start">
-            <span>Hi,</span>
-            <span>I'm Masato</span>
-            <span>Tsunematsu</span>
-          </h1>
-        </template>
-        <p class="absolute top-0 right-0 flex flex-wrap items-end flex-col text-[clamp(10px,calc(10/375*100vw),18px)] italic tracking-widest leading-[1.6]">
-          <span>The coke drinking</span>
-          <span>infrustructure engineer</span>
-          <span>based in Japan</span>
-        </p>
-        <div>
-          <Avatar />
-        </div>
-        <template #footer>
-          <Socials />
-        </template>
-      </AppSection>
-    </template>
-
-    <AppSection id="biography">
-      <template #header>
-        <h2>Biography</h2>
-      </template>
+    <AppSection title="Biography">
       <p>
         On January 1st, 1994, I was born in the jungle and raised by a gorilla.
       </p>
@@ -36,15 +10,8 @@
       </p>
     </AppSection>
 
-    <AppSection id="experience">
-      <template #header>
-        <h2>Experience</h2>
-      </template>
-      <AppSection>
-        <template #header>
-          <small>Apr 2016 - Sep 2016</small>
-          <h3>Network programming</h3>
-        </template>
+    <AppSection title="Experience">
+      <AppSection title="Network programming" :level="3" label="Apr 2016 - Sep 2016">
         <p>
           Participated in the research and development of a video streaming system using SDN with
           <AppLink href="https://wikipedia.org/wiki/OpenFlow">OpenFlow</AppLink>,
@@ -56,11 +23,7 @@
           in addition to programming skills.
         </p>
       </AppSection>
-      <AppSection>
-        <template #header>
-          <small>Oct 2016 - May 2020</small>
-          <h3>Database administration</h3>
-        </template>
+      <AppSection title="Database administration" :level="3" label="Oct 2016 - May 2020">
         <p>
           Worked as a database administrator for several B2C companies,
           responsible for designing, building, testing, and operating
@@ -79,11 +42,7 @@
           Also contributed to application development by leveraging experience as a programmer.
         </p>
       </AppSection>
-      <AppSection>
-        <template #header>
-          <small>Jun 2020 - Present</small>
-          <h3>Cloud migration</h3>
-        </template>
+      <AppSection title="Cloud migration" :level="3" label="Jun 2020 - Present">
         <p>
           Worked as an infrastructure engineer on several government-related projects
           involving system migration from on-premises to <AppLink href="https://aws.amazon.com">AWS</AppLink>.
@@ -98,10 +57,7 @@
       </AppSection>
     </AppSection>
 
-    <AppSection id="capability">
-      <template #header>
-        <h2>Capability</h2>
-      </template>
+    <AppSection title="Capability">
       <p>
         I can transform into legendary warriors known as the Cure Gorilla.
       </p>
@@ -139,55 +95,41 @@
       </ul>
     </AppSection>
 
-    <AppSection id="showcase">
-      <template #header>
-        <h2>Showcase</h2>
-      </template>
+    <AppSection title="Showcase">
       <p>
         Showcase some products.
       </p>
-      <AppSection>
-        <template #header>
-          <h3>dotfiles</h3>
-          <Tags :tags="['dotfiles', 'macos-setup']" />
-        </template>
+      <AppSection title="dotfiles" :level="3" :tags="['dotfiles', 'macos-setup']">
         <p>
           My macOS dotfiles.
           Automate the setup by deploying configuration files with stow, installing packages with Brewfile, and configuring the OS with defaults command.
         </p>
         <template #footer>
-          <Button href="https://github.com/tsunematsu21/dotfiles">
+          <AppButton href="https://github.com/tsunematsu21/dotfiles">
             View on GitHub
-          </Button>
+          </AppButton>
         </template>
       </AppSection>
-      <AppSection>
-        <template #header>
-          <h3>FizzBuzz Generic Library in Go</h3>
-          <Tags :tags="['golang', 'fizzbuzz']" />
-        </template>
+      <AppSection title="FizzBuzz Generic Library in Go" :level="3" :tags="['golang', 'fizzbuzz']">
         <p>This is a flexible and reusable FizzBuzz library implemented in Go using generics.</p>
         <p>It allows you to define custom rules and actions for any type, making it easy to extend the traditional FizzBuzz pattern beyond simple integers.</p>
         <template #footer>
-          <Group>
-            <Button href="https://github.com/tsunematsu21/fb">
+          <AppGroup>
+            <AppButton href="https://github.com/tsunematsu21/fb">
               View on GitHub
-            </Button>
-            <Button href="https://pkg.go.dev/github.com/tsunematsu21/fb">
+            </AppButton>
+            <AppButton href="https://pkg.go.dev/github.com/tsunematsu21/fb">
               View on Go Packages
-            </Button>
-            <Button href="https://note.com/tsunematsu21/n/n3059c20363ec">
+            </AppButton>
+            <AppButton href="https://note.com/tsunematsu21/n/n3059c20363ec">
               View on note (Japanese)
-            </Button>
-          </Group>
+            </AppButton>
+          </AppGroup>
         </template>
       </AppSection>
     </AppSection>
 
-    <AppSection id="contact">
-      <template #header>
-        <h2>Get in touch</h2>
-      </template>
+    <AppSection title="Get in touch">
       <p>
         Want to get in touch? I'm not currently looking for a job, but welcome feedback and chat.
         Please ping me on socials or fill out the form below. I will try my best to reply to you.
@@ -197,10 +139,7 @@
       </template>
     </AppSection>
 
-    <AppSection id="colophon">
-      <template #header>
-        <h2>Colophon</h2>
-      </template>
+    <AppSection title="Colophon">
       <p>
         Thank you for visiting my site. This site is built with Nuxt.js and Tailwind CSS and hosted on GitHub Pages. The code is available on <AppLink href="https://github.com/tsunematsu21/tsunematsu21.github.io">GitHub</AppLink>.
       </p>
@@ -208,16 +147,5 @@
         I am not a native English speaker, so I apologize if the English on the site content is incorrect. But I did my best to create this site to practice my English as well.
       </p>
     </AppSection>
-
-    <template #footer>
-      <Socials />
-      <div class="flex flex-row items-center justify-center gap-2 dark:bg-black">
-        <Logo class="w-14" />
-        <div class="flex flex-col items-start font-sans pt-3">
-          <span class="text-xs">Made with love by</span>
-          <span class="text-sm">Masato Tsunematsu</span>
-        </div>
-      </div>
-    </template>
   </NuxtLayout>
 </template>

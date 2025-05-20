@@ -28,7 +28,3 @@ h2 {
 h3 {
   @apply text-[clamp(24px,calc(24/375*100vw),48px)];
 }
-
-small {
-  @apply font-sans font-extralight opacity-75;
-}
