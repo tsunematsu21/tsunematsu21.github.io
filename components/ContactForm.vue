@@ -1,9 +1,9 @@
 <template>
   <form @submit="onSubmit" target="_blank" method="POST" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfeCT7hSVsBzyFM7qp40F3MYrIvQ_4nAKfqMDPd_aRHCO52Lw/formResponse" class="block space-y-[1rem] font-sans">
-    <ContactFormInput type="text" label="Name" name="entry.383020617" v-model="name" />
-    <ContactFormInput type="email" label="Email" name="entry.1860689314" v-model="email" />
-    <ContactFormInput type="text" label="Subject" name="entry.2105845452" v-model="subject" />
-    <ContactFormInput type="textarea" label="Message" name="entry.1814779587" v-model="message" />
+    <ContactFormInput type="text" label="Name" name="entry.383020617" v-model="name" placeholder="Jason Statham" />
+    <ContactFormInput type="email" label="Email" name="entry.1860689314" v-model="email" placeholder="jasonstatham@example.com" />
+    <ContactFormInput type="text" label="Subject" name="entry.2105845452" v-model="subject" placeholder="By the powers vested in me," />
+    <ContactFormInput type="textarea" label="Message" name="entry.1814779587" v-model="message" placeholder="I now pronounce you man and knife." />
     <button class="bg-black text-white dark:bg-white dark:text-black rounded-md w-full h-8 cursor-pointer flex items-center justify-center gap-2">
       <span class="text-xs">
         Send Message
