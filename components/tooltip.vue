@@ -15,7 +15,7 @@
       </span>
     </span>
     <span :aria-describedby="tooltipId">
-      <slot :tooltipId="tooltipId" />
+      <slot />
     </span>
   </span>
 </template>
