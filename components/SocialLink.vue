@@ -7,18 +7,18 @@
         </ToolTip>
       </li>
       <li>
-        <ToolTip text="Instagram">
-          <AppButton href="https://instagram.com/tsunematsu21" />
+        <ToolTip text="Instagram" v-slot="slotProps">
+          <AppButton href="https://instagram.com/tsunematsu21" :aria-labelledby="slotProps.tooltipId" />
         </ToolTip>
       </li>
       <li>
-        <ToolTip text="X (Twitter)">
-          <AppButton href="https://x.com/tsunematsu21" />
+        <ToolTip text="X (Twitter)" v-slot="slotProps">
+          <AppButton href="https://x.com/tsunematsu21" :aria-labelledby="slotProps.tooltipId" />
         </ToolTip>
       </li>
       <li>
-        <ToolTip text="note (Japanese)">
-          <AppButton href="https://note.com/tsunematsu21" />
+        <ToolTip text="note (Japanese)" v-slot="slotProps">
+          <AppButton href="https://note.com/tsunematsu21" :aria-labelledby="slotProps.tooltipId" />
         </ToolTip>
       </li>
     </ul>
