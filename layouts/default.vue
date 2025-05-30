@@ -20,7 +20,7 @@
       </div>
       <SocialLink />
     </header>
-    <main class="space-y-[4rem]">
+    <main class="space-y-[8rem]">
       <slot />
     </main>
     <footer class="space-y-[2rem] mt-[12rem]">
