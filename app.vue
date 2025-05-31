@@ -67,32 +67,37 @@
         and organizations who create monsters to bring misery to the Earth and further their plans.
       </p>
       <p>In addition, I have the following skills:</p>
-      <ul class="list-disc pl-[1em]">
-        <li>
-          <b>Programming:</b>
+      <dl class="[&_dt]:font-bold [&_dd]:pl-[1em] [&_dd]:pb-[1em] [&_dd]:text-sm">
+        <dt>Programming:</dt>
+        <dd>
           TypeScript, Python, Go, Ruby, Java
-        </li>
-        <li>
-          <b>Database:</b>
+        </dd>
+
+        <dt>Database:</dt>
+        <dd>
           Oracle, MySQL, PostgreSQL, Db2, Amazon RDS / Aurora / DynamoDB / DocumentDB, Elasticache
-        </li>
-        <li>
-          <b>Cloud:</b>
+        </dd>
+
+        <dt>Cloud:</dt>
+        <dd>
           Amazon Web Service, Microsoft Azure
-        </li>
-        <li>
-          <b>IaC:</b>
+        </dd>
+
+        <dt>IaC:</dt>
+        <dd>
           AWS CDK, CloudFormation, Ansible, Terraform
-        </li>
-        <li>
-          <b>Monitoring:</b>
+        </dd>
+
+        <dt>Monitoring:</dt>
+        <dd>
           CloudWatch, Zabbix, Mackerel
-        </li>
-        <li>
-          <b>Other:</b>
+        </dd>
+
+        <dt>Other:</dt>
+        <dd>
           Git, Docker
-        </li>
-      </ul>
+        </dd>
+      </dl>
     </AppSection>
 
     <AppSection title="Showcase">
