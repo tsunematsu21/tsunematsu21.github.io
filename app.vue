@@ -137,10 +137,12 @@
     <AppSection title="Get in touch">
       <p>
         Want to get in touch? I'm not currently looking for a job, but welcome feedback and chat.
-        Please ping me on socials or fill out the form below. I will try my best to reply to you.
+        Please ping me on socials or email below. I will try my best to reply to you.
       </p>
       <template #footer>
-        <ContactForm />
+        <AppButton href="mailto:hello@ma.tsu.sh" class="">
+          hello@ma.tsu.sh
+        </AppButton>
       </template>
     </AppSection>
 
