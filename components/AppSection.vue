@@ -10,7 +10,7 @@
         {{ title }}
       </component>
       <ul v-if="tags" class="flex flex-wrap items-start justify-start gap-2">
-        <li v-for="tag of tags">
+        <li v-for="tag of tags" :key="tag">
           <SubText>
             #{{ tag }}
           </SubText>
