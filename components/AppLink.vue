@@ -1,5 +1,10 @@
 <template>
-  <a :href="href" :target="href.startsWith('http') ? '_blank' : '_self'" class="inline-flex items-center text-primary hover:opacity-75 transition-all">
+  <a
+    :href="href"
+    :target="href.startsWith('http') ? '_blank' : '_self'"
+    :rel="href.startsWith('http') ? 'noopener noreferrer' : undefined"
+    class="inline-flex items-center text-primary hover:opacity-75 transition-all"
+  >
     <span class="underline">
       <slot />
     </span>

@@ -1,5 +1,10 @@
 <template>
-  <component :is="component.element" v-bind="{ ...component.props }" class="cursor-pointer">
+  <component
+    :is="component.element"
+    v-bind="{ ...component.props }"
+    :aria-label="ariaLabel || undefined"
+    class="cursor-pointer"
+  >
     <span class="flex items-center justify-center gap-2 h-10 min-w-10 rounded-md border-black dark:border-white border-2 bg-black dark:bg-white text-white dark:text-black">
       <span class="inline-flex items-center justify-center gap-2" :class="$slots.default ? 'px-4' : 'px-0'">
         <span v-if="$slots.default" class="text-xs font-sans font-bold -mb-[2px]">
@@ -36,6 +41,7 @@
 <script setup lang="ts">
 const props = defineProps<{
   href?: string
+  ariaLabel?: string
 }>()
 
 const component = computed(() => {
@@ -44,13 +50,16 @@ const component = computed(() => {
       element: 'a',
       props: {
         href: props.href,
-        target: '_blank'
+        target: '_blank',
+        rel: 'noopener noreferrer'
       }
     }
   } else {
     return {
       element: 'button',
-      props: {}
+      props: {
+        type: 'button'
+      }
     }
   }
 });
